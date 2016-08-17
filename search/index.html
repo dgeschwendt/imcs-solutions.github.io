@@ -2,9 +2,8 @@
 layout: default 
 ---
 
-<div class="container p-t-1">
-  <h1 class="m-b-1">Search 4 wut little we have:</h1>
-  <ul id="search-results"></ul>
+<div class="container p-t-2">
+  <div id="search-results"></div>
 </div>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.1/lunr.min.js"></script>
@@ -29,10 +28,14 @@ layout: default
         if (results.length) { // Are there any results?
         var appendString = '';
 
+        appendString += '<h2 class="m-b-1">Results from our <a href="/blog/">blog</a> posts</h2>';
+    
         for (var i = 0; i < results.length; i++) {  // Iterate over the results
             var item = store[results[i].ref];
-            appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-            appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+            appendString += '<div class="card card-block">';
+            appendString += '<h4 class="card-title"><a href="' + item.url + '">' + item.title + '</a></h4>';
+            appendString += '<p class="card-text">' + item.content.substring(0, 150) + '</p>';
+            appendString += '</div>';
         }
 
         searchResults.innerHTML = appendString;

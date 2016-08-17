@@ -1,6 +1,17 @@
 @import 'variables';
 @import 'vendor/bootstrap';
 
+.page-home {
+  img {
+    margin: auto;
+    max-width: 350px;
+  }
+
+  h1 {
+    font-variant: small-caps;
+  }
+}
+
 .fout-buster {
     display: block !important;
 }
