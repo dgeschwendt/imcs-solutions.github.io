@@ -1,0 +1,51 @@
+{
+  "name": "imcs-solutions.github.io",
+  "version": "0.1.0",
+  "description": "IMCS Inc.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -d --progress",
+    "jekyll-serve": "bundle exec jekyll serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node watch.js --watch",
+    "webpack": "webpack -d --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imcs-solutions/imcs-solutions.github.io.git"
+  },
+  "keywords": [
+    "IMCS",
+    "International",
+    "Material",
+    "Control",
+    "Systems",
+    "Inc"
+  ],
+  "author": "Joshua L Geschwendt <joshua@geschwendt.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/imcs-solutions/imcs-solutions.github.io/issues"
+  },
+  "homepage": "https://github.com/imcs-solutions/imcs-solutions.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "4.0.0-alpha.3",
+    "browser-sync": "2.14.0",
+    "clean-webpack-plugin": "^0.1.10",
+    "css-loader": "0.23.1",
+    "extract-text-webpack-plugin": "1.0.1",
+    "fsevents": "1.0.14",
+    "minimist": "1.2.0",
+    "monkey-hot-loader": "0.0.3",
+    "node-sass": "^3.8.0",
+    "qs": "^6.2.1",
+    "sass-loader": "4.0.0",
+    "style-loader": "0.13.1",
+    "webpack": "1.13.1",
+    "webpack-dev-middleware": "1.6.1",
+    "webpack-hot-middleware": "2.12.2",
+    "webpack-merge": "0.14.1",
+    "worker-loader": "0.7.1"
+  }
+}
